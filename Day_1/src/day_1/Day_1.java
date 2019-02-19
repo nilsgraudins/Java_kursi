@@ -90,43 +90,26 @@ public class Day_1 {
         //vai sakrit
         System.out.print("Ievadi loginu: ");
         String logins = sc.nextLine();
-        
-        
-        
-        int sim = logins.length();
-        
-        
-        if(sim >= 3 && sim <= 12){
-            if(logins.equals(log)){
-                System.out.println("Viss pareizi!");
-            }else{
-                System.out.println("Nepareizs logins!");
-            }
-            
-        }else{
-            System.out.println("Garums neatbilst!");
-        }
         System.out.print("Ievadi paroli: ");
         String parole = sc.nextLine();
-        int par = parole.length();
-        
-        if(par >= 5 && par <= 10){
-            if(parole.equals(parol)){
-                System.out.println("Viss pareizi!");
-            }else{
-                System.out.println("Nepareiza parole!");
-            }
-            
-        }else{
-            System.out.println("Garums neatbilst!");
-            
         
         
+        //int sim = logins.length(); 
+        // var netaisit jaunu int, "logins" var likt "sim" vietā
         
-               
-        
-        
+        if(logins.length() >= 3 && logins.length() <= 12 && parole.length() >= 5 && parole.length() <= 10){
+           
+            if(log.equals(logins) && parol.equals(parole)){// PAPRASIT PAR LOG UN LOGINS SAKARIBU!!!
                 
+                System.out.println("Veiksmigi!");
+            }else{
+                
+                System.out.println("Neveiksmigi!");
+            }
+        }else{
+            System.out.println("Ievades garums nav pareizs!");
+        }
+        
         
     }
 }
