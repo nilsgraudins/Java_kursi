@@ -99,9 +99,10 @@ public class Day_1 {
         
         if(logins.length() >= 3 && logins.length() <= 12 && parole.length() >= 5 && parole.length() <= 10){
            
-            if(log.equals(logins) && parol.equals(parole)){// PAPRASIT PAR LOG UN LOGINS SAKARIBU!!!
-                
                 System.out.println("Veiksmigi!");
+            if(log.equals(logins) && parol.equals(parole)){// !!!PAPRASIT PAR LOG UN LOGINS SAKARIBU!!!
+                                                        // Var salidzinat ari otradi (log.equals(logins)
+                System.out.println("Veiksmigi!");       // vai ari var (logins.equals(log), bus tas pats.
             }else{
                 
                 System.out.println("Neveiksmigi!");
